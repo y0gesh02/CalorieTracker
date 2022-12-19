@@ -12,7 +12,7 @@ import (
 
 //return type struct of client which was present in mongodb
 func DBinstance() *mongo.Client {
-	MongoDb := "mongodb+srv://yogesh02:Devil1234@cluster0.euqff.mongodb.net/?retryWrites=true&w=majority"
+	MongoDb := "URL"
 
 	client, err := mongo.NewClient(options.Client().ApplyURI(MongoDb)) //connecting
 	if err != nil {
